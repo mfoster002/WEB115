@@ -4,19 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB-115 Final Project</title>
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="css/projectcss.css">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-<form>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname"><br>
-    <label for="email">Email:</label><br>
-    <input type="text" id="email" name="email"><br>
-    <label for="wgoal">Weekly goal:</label><br>
-    <input type="text" id="wgoal" name="wgoal"><br>
-
-</form>
-<button>Create Meal Plan</button>    
+    <!--Banner image-->
+    <img src="images/banner.png" alt="Meal Plan Banner">
+    <h1>Welcome! Fill out the following form to create your personalized meal plan.</h1>
+    <form>
+    <!--Heading for the first section of my form-->
+        <h2>Personal Information</h2>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" required>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" required>
+        <label for="email">Email Adress:</label>
+        <input type="text" id="email" name="email" required>
+        <label for="wgoal">Weekly goal:</label>
+        <input type="text" id="wgoal" name="wgoal" required>
+    </form>
+    <!--Heading to include instructions-->
+    <h2>Use the table below to enter your meals for the week:</h2>
+    <!--Table style form for meals of the week-->
+<table>
+    <tr>
+        <th></th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+    </tr>
+    <tr>
+        <td>Breakfast</td>
+        <td><input type="text" id="mondaybfast" name="mondaybfast"></td>
+        <td><input type="text" id="tuesdaybfast" name="tuesdaybfast"></td>
+        <td><input type="text" id="wednesdaybfast" name="wednesdaybfast"></td>
+        <td><input type="text" id="thursdaybfast" name="thursdaybfast"></td>
+        <td><input type="text" id="fridaybfast" name="fridaybfast"></td>
+        <td><input type="text" id="saturdaybfast" name="saturdaybfast"></td>
+        <td><input type="text" id="sundaybfast" name="sundaybfast"></td>
+    </tr>
+    <tr>
+        <td>Snack</td>
+        <td><input type="text" id="mondays" name="mondays"></td>
+        <td><input type="text" id="tuesdays" name="tuesdays"></td>
+        <td><input type="text" id="wednesdays" name="wednesdays"></td>
+        <td><input type="text" id="thursdays" name="thursdays"></td>
+        <td><input type="text" id="fridays" name="fridays"></td>
+        <td><input type="text" id="saturdays" name="saturdays"></td>
+        <td><input type="text" id="sundays" name="sundays"></td>
+    </tr>
+    <tr>
+        <td>Lunch</td>
+        <td><input type="text" id="mondayl" name="mondayl"></td>
+        <td><input type="text" id="tuesdayl" name="tuesdayl"></td>
+        <td><input type="text" id="wednesdayl" name="wednesdayl"></td>
+        <td><input type="text" id="thursdayl" name="thursdayl"></td>
+        <td><input type="text" id="fridayl" name="fridayl"></td>
+        <td><input type="text" id="saturdayl" name="saturdayl"></td>
+        <td><input type="text" id="sundayl" name="sundayl"></td>
+    </tr>
+    <tr>
+        <td>Snack</td>
+        <td><input type="text" id="mondays2" name="mondays2"></td>
+        <td><input type="text" id="tuesdays2" name="tuesdays2"></td>
+        <td><input type="text" id="wednesdays2" name="wednesdays2"></td>
+        <td><input type="text" id="thursdays2" name="thursdays2"></td>
+        <td><input type="text" id="fridays2" name="fridays2"></td>
+        <td><input type="text" id="saturdays2" name="saturdays2"></td>
+        <td><input type="text" id="sundays2" name="sundays2"></td>
+    </tr>
+    <tr>
+        <td>Dinner</td>
+        <td><input type="text" id="mondayd" name="mondayd"></td>
+        <td><input type="text" id="tuesdayd" name="tuesdayd"></td>
+        <td><input type="text" id="wednesdayd" name="wednesdayd"></td>
+        <td><input type="text" id="thursdayd" name="thursdayd"></td>
+        <td><input type="text" id="fridayd" name="fridayd"></td>
+        <td><input type="text" id="saturdayd" name="saturdayd"></td>
+        <td><input type="text" id="sundayd" name="sundayd"></td>
+    </tr>
+</table>
+<!--Created container to center buttons on main page-->
+<div class="button-container">
+    <button id="createButton">Create Meal Plan</button> 
+    <button id="clearButton">Clear form</button>
+</div>
+<!--External JavaScript-->
+<script src="js/projectJS.js"></script>
 </body>
 </html>
